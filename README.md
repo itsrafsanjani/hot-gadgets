@@ -1,6 +1,6 @@
 # E-Commerce Web Template (Hot Gadget)
 
- A simple ecommerce website developed with HTML, CSS and Bootstrap. Feel free to modify.
+ A simple(Sooo Hot 🥵🥵🥵) ecommerce website developed with HTML, CSS and Bootstrap. Feel free to modify.
 
 ## Usage
  - Just simply download this repository.
