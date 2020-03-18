@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.logo{
+    height: 50px;
+    padding: 0 20px;
+    margin-left: 70%;
+}
+.nav-item{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 18px;
+}
+
+
+.carousel {
+    position: relative;
+}
+  
+ol.carousel-indicators {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    right: 0;
+    width: auto;
+}
+  
+ol.carousel-indicators li,
+ol.carousel-indicators li.active {
+    float: left;
+    width: 15px;
+    height: 10px;
+    margin: 0;
+    border-radius: 100px;
+    border: 0;
+    background: rgb(170, 170, 170);
+    margin: 0 10px;
+    transition: all .4s linear;
+}
+ol.carousel-indicators li.active {
+    width: 40px;
+    background: linear-gradient(to right, #ff5722, #fdd835);
+}
+ol.carousel-indicators li.odd.active{
+    background: linear-gradient(to right, #00BCD4, #2196F3);
+}
+.carousel-item:nth-child(1), .carousel-item:nth-child(3){
+    background: url(images/bg/1.png);
+    background-size: cover;
+}
+.carousel-item:nth-child(2){
+    background: url(images/bg/3.png);
+    background-size: cover;
+}
+
+.header{
+    min-height: calc(100vh - 78px);
+}
+.flex-even{
+    flex: 0 0 50%;
+}
+.textPart{
+    padding: 0 10%;
+}
+.heading{
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+.description{
+    font-size: 15px;
+    color: #777;
+}
+
+.macBookImg{
+    width: 80%;
+    margin-left: -5%;
+}
+.googleHomeImg{
+    width: 80%;
+    margin-left: 5%;
+}
+.JBLXtremeImg{
+    width: 80%;
+    margin-left: -5%;
+}
+
+.cbtn:link, .cbtn:visited{
+    text-decoration: none;
+    width: 160px;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    transition: all .2s;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+.cbtn:hover{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transform: translateY(-3px);
+}
+.cbtn:active{
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    transform: translateY(-1px);
+}
+
+.cbtn-dark{
+    color: #fff;
+    background-color: #000;
+    border: none;
+}
+.fa-arrow-right{
+    height: 1px;
+    width: 10px;
+}
+.btn-animated{
+    animation: moveToTop .4s ease-out .75s;
+    animation-fill-mode: backwards;
+}
+
+
+@keyframes moveToTop{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
