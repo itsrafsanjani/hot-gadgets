@@ -137,11 +137,11 @@ ol.carousel-indicators li.odd.active{
 
 /* P R O D U C T S   P A R T */
 .products{
-    min-height: 160vh;
+    min-height: 200vh;
 }
 .pt{
-    min-height: 80vh;
-    padding: 2vh 6vw;
+    min-height: 100vh;
+    padding: 10.5vh 6vw 0;
 }
 .pt h2{
     margin-bottom: 0;
@@ -174,7 +174,7 @@ ol.carousel-indicators li.odd.active{
     padding-top: 0;
 }
 .card-img{
-    height: 80%;
+    height: 50%;
     width: 80%;
 }
 .card-title{
