@@ -14,7 +14,7 @@ body{
     padding: 8px 18px;
 }
 
-
+/* H E A D E R   P A R T */
 .carousel {
     position: relative;
 }
@@ -55,6 +55,9 @@ ol.carousel-indicators li.odd.active{
     background: url(images/bg/3.png);
     background-size: cover;
 }
+.carousel-control-prev, .carousel-control-next{
+    width: 9.5vw;
+}
 
 .header{
     min-height: calc(100vh - 78px);
@@ -68,12 +71,15 @@ ol.carousel-indicators li.odd.active{
 .heading{
     font-size: 35px;
     padding-bottom: 20px;
+    animation: moveToRight .8s ease-out .3s;
+    animation-fill-mode: backwards;
 }
 .description{
     font-size: 15px;
     color: #777;
+    animation: moveToLeft .8s ease-out .3s;
+    animation-fill-mode: backwards;
 }
-
 .macBookImg{
     width: 80%;
     margin-left: -5%;
@@ -129,10 +135,98 @@ ol.carousel-indicators li.odd.active{
 }
 
 
+/* P R O D U C T S   P A R T */
+.products{
+    min-height: 160vh;
+}
+.pt{
+    min-height: 80vh;
+}
+
+
+/* A P P L I E D   A N I M A T I O N S */
+.animateLeft{
+    animation: moveToLeft 1s ease-out .2s;
+    animation-fill-mode: backwards;
+}
+.animateRight{
+    animation: moveToRight 1s ease-out .2s;
+    animation-fill-mode: backwards;
+}
+.animateSkyDropLeft{
+    animation: skyDropLeft 1.2s ease-in .2s;
+    animation-fill-mode: backwards;
+}
+.animateSkyDropRight{
+    animation: skyDropRight 1.2s ease-in .2s;
+    animation-fill-mode: backwards;
+}
+
+
+
+/* A N I M A T I O N S */
 @keyframes moveToTop{
     0%{
         opacity: 0;
         transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveToLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes moveToRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes skyDropRight{
+    0%{
+        opacity: 0;
+        transform: translate(-60px, -150px);
+    }
+    70%{
+        transform: translate(-40px, 30px);
+    }
+    85%{
+        transform: translate(-20px, -30px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes skyDropLeft{
+    0%{
+        opacity: 0;
+        transform: translate(60px, -150px);
+    }
+    70%{
+        transform: translate(40px, 30px);
+    }
+    85%{
+        transform: translate(20px, -30px);
     }
     100%{
         opacity: 1;
