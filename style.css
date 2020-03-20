@@ -223,7 +223,21 @@ ol.carousel-indicators li.odd.active{
     transform: scale(0.8);
     margin-bottom: -30px;
 }
-
+.footer{
+    height: 60px;
+    background: #000;
+    color: #fff;
+}
+.ft{
+    padding-top: 20px;
+}
+.fl, .fl:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.fl:hover{
+    color: #ff5722;
+}
 
 /* A P P L I E D   A N I M A T I O N S */
 .animateLeft{
