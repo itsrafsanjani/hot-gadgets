@@ -56,7 +56,7 @@ ol.carousel-indicators li.odd.active{
     background-size: cover;
 }
 .carousel-control-prev, .carousel-control-next{
-    width: 9.5vw;
+    width: 9vw;
 }
 
 .header{
