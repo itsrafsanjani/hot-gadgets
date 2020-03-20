@@ -195,6 +195,35 @@ ol.carousel-indicators li.odd.active{
     margin-top: 10px;
 }
 
+/* C A T E G O R I E S */
+.categories{
+    min-height: 100vh;
+}
+.titleSec{
+    margin: 50px 0 -30px;
+    text-align: center;
+}
+.downLine{
+    width: 80px;
+    height: 5px;
+    background: linear-gradient(to right, 
+                #ff5722, #ffb222);
+    border-radius: 10px;
+}
+.orderbg{
+    max-height: 100%;
+    max-width: 100%;
+}
+.cimg{
+    padding: 60px 48px;
+    margin: 30px;
+    box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.1);
+}
+.cp2{
+    transform: scale(0.8);
+    margin-bottom: -30px;
+}
+
 
 /* A P P L I E D   A N I M A T I O N S */
 .animateLeft{
