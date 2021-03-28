@@ -6,16 +6,15 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-    height: 50px;
-    padding: 0 20px;
-    margin-left: 70%;
+#home {
+    background-image: url(../images/bg/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
 }
 
-.nav-item {
-    font-size: 14px;
-    font-weight: 500;
-    padding: 8px 18px;
+.logo {
+    height: 50px;
 }
 
 /* H E A D E R   P A R T */
@@ -53,18 +52,8 @@ ol.carousel-indicators li.odd.active {
     background: linear-gradient(to right, #00BCD4, #2196F3);
 }
 
-.carousel-item:nth-child(1), .carousel-item:nth-child(3) {
-    background: url(../images/bg/1.png);
-    background-size: cover;
-}
-
-.carousel-item:nth-child(2) {
-    background: url(../images/bg/3.png);
-    background-size: cover;
-}
-
 .carousel-control-prev, .carousel-control-next {
-    width: 9vw;
+    width: 3vw;
 }
 
 .header {
@@ -242,17 +231,12 @@ ol.carousel-indicators li.odd.active {
     text-align: center;
 }
 
-.downLine {
+.down-line {
     width: 80px;
     height: 5px;
     background: linear-gradient(to right,
     #ff5722, #ffb222);
     border-radius: 10px;
-}
-
-.orderbg {
-    max-height: 100%;
-    max-width: 100%;
 }
 
 .cimg {
