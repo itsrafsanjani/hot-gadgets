@@ -1,14 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap');
 
-body{
-    font-family: 'Montserrat', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
-.logo{
+
+.logo {
     height: 50px;
     padding: 0 20px;
     margin-left: 70%;
 }
-.nav-item{
+
+.nav-item {
     font-size: 14px;
     font-weight: 500;
     padding: 8px 18px;
@@ -18,7 +22,7 @@ body{
 .carousel {
     position: relative;
 }
-  
+
 ol.carousel-indicators {
     position: absolute;
     bottom: 0;
@@ -27,77 +31,88 @@ ol.carousel-indicators {
     right: 0;
     width: auto;
 }
-  
+
 ol.carousel-indicators li,
 ol.carousel-indicators li.active {
     float: left;
     width: 15px;
     height: 10px;
-    margin: 0;
     border-radius: 100px;
     border: 0;
     background: rgb(170, 170, 170);
     margin: 0 10px;
     transition: all .4s linear;
 }
+
 ol.carousel-indicators li.active {
     width: 40px;
     background: linear-gradient(to right, #ff5722, #fdd835);
 }
-ol.carousel-indicators li.odd.active{
+
+ol.carousel-indicators li.odd.active {
     background: linear-gradient(to right, #00BCD4, #2196F3);
 }
-.carousel-item:nth-child(1), .carousel-item:nth-child(3){
-    background: url(images/bg/1.png);
+
+.carousel-item:nth-child(1), .carousel-item:nth-child(3) {
+    background: url(../images/bg/1.png);
     background-size: cover;
 }
-.carousel-item:nth-child(2){
-    background: url(images/bg/3.png);
+
+.carousel-item:nth-child(2) {
+    background: url(../images/bg/3.png);
     background-size: cover;
 }
-.carousel-control-prev, .carousel-control-next{
+
+.carousel-control-prev, .carousel-control-next {
     width: 9vw;
 }
 
-.header{
+.header {
     min-height: calc(100vh - 78px);
 }
-.flex-even{
+
+.flex-even {
     flex: 0 0 50%;
 }
-.textPart{
+
+.textPart {
     padding: 0 10%;
 }
-.heading{
+
+.heading {
     font-size: 35px;
     padding-bottom: 20px;
     animation: moveToRight .8s ease-out .3s;
     animation-fill-mode: backwards;
 }
-.description{
+
+.description {
     font-size: 15px;
     color: #777;
     animation: moveToLeft .8s ease-out .3s;
     animation-fill-mode: backwards;
 }
-.macBookImg{
-    width: 80%;
-    margin-left: -5%;
-}
-.googleHomeImg{
-    width: 80%;
-    margin-left: 5%;
-}
-.JBLXtremeImg{
+
+.macBookImg {
     width: 80%;
     margin-left: -5%;
 }
 
-.cbtn:link, .cbtn:visited{
+.googleHomeImg {
+    width: 80%;
+    margin-left: 5%;
+}
+
+.JBLXtremeImg {
+    width: 80%;
+    margin-left: -5%;
+}
+
+.cbtn:link, .cbtn:visited {
     text-decoration: none;
     width: 160px;
     padding: 10px 0;
-    border-radius: 5px;
+    border-radius: 9px;
     margin-top: 20px;
     margin-bottom: 100px;
     transition: all .2s;
@@ -105,14 +120,16 @@ ol.carousel-indicators li.odd.active{
     color: #fff;
     text-align: center;
 }
-.cbtn:hover{
+
+.cbtn:hover {
     text-decoration: none;
     background-color: #000;
     color: #fff;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.17) !important;
     transform: translateY(-3px);
 }
-.cbtn:active{
+
+.cbtn:active {
     text-decoration: none;
     background-color: #000;
     color: #fff;
@@ -120,39 +137,46 @@ ol.carousel-indicators li.odd.active{
     transform: translateY(-1px);
 }
 
-.cbtn-dark{
+.cbtn-dark {
     color: #fff;
     background-color: #000;
     border: none;
 }
-.fa-arrow-right{
+
+.fa-arrow-right {
     height: 1px;
     width: 10px;
 }
-.btn-animated{
+
+.btn-animated {
     animation: moveToTop .4s ease-out .75s;
     animation-fill-mode: backwards;
 }
 
 
 /* P R O D U C T S   P A R T */
-.products{
+.products {
     min-height: 200vh;
 }
-.pt{
+
+.pt {
     min-height: 100vh;
     padding: 10.5vh 6vw 0;
 }
-.pt h2{
+
+.pt h2 {
     margin-bottom: 0;
 }
-.pt a{
+
+.pt a {
     padding: 14px 0;
 }
-.pt-head{
+
+.pt-head {
     padding: 0 1.5vw;
 }
-.see-all, .see-all:hover{
+
+.see-all, .see-all:hover {
     text-decoration: none;
     font-weight: 700;
     color: white;
@@ -161,169 +185,198 @@ ol.carousel-indicators li.odd.active{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.card{
+
+.card {
     transform: scale(0.9, 0.9);
-    border-radius: 5px;
+    border-radius: 21px;
     border: none;
-    box-shadow: 0 1px 10px 1px rgba(0, 0, 0, 0.1);
     margin-top: -20px;
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.05);
 }
-.card-body{
+
+.card:hover {
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+    transition: .3s;
+}
+
+.card-body {
     text-align: center;
     margin: 5vh 0;
     padding-top: 0;
 }
-.card-img{
+
+.card-img {
     height: 50%;
     width: 80%;
 }
-.card-title{
+
+.card-title {
     font-size: 1.5rem;
     padding-top: 35px;
 }
-.card-text{
+
+.card-text {
     font-size: 14px;
     color: #777;
     padding: 20px 12px 0;
 }
-.card-price{
+
+.card-price {
     font-size: 1.6rem;
     padding-bottom: 30px;
 }
-.card-btn:link{
-    padding: 10px 20px;
+
+.card-btn:link {
+    padding: 12px 20px;
     margin-top: 10px;
+    border-radius: 9px;
 }
 
 /* C A T E G O R I E S */
-.categories{
+.categories {
     min-height: 100vh;
 }
-.titleSec{
+
+.titleSec {
     margin: 50px 0 -30px;
     text-align: center;
 }
-.downLine{
+
+.downLine {
     width: 80px;
     height: 5px;
-    background: linear-gradient(to right, 
-                #ff5722, #ffb222);
+    background: linear-gradient(to right,
+    #ff5722, #ffb222);
     border-radius: 10px;
 }
-.orderbg{
+
+.orderbg {
     max-height: 100%;
     max-width: 100%;
 }
-.cimg{
-    padding: 60px 48px;
+
+.cimg {
+    padding: 60px 45px;
     margin: 30px;
-    box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 1px 30px 1px;
+    box-shadow: 0 6px 37px rgba(109, 109, 109, 0.15);
 }
-.cp2{
+
+.cp2 {
     transform: scale(0.8);
     margin-bottom: -30px;
 }
-.footer{
+
+.footer {
     height: 60px;
     background: #000;
     color: #fff;
 }
-.ft{
+
+.ft {
     padding-top: 20px;
 }
-.fl, .fl:hover{
+
+.fl, .fl:hover {
     color: #fff;
     text-decoration: none;
 }
-.fl:hover{
+
+.fl:hover {
     color: #ff5722;
 }
 
 /* A P P L I E D   A N I M A T I O N S */
-.animateLeft{
+.animateLeft {
     animation: moveToLeft 1s ease-out .2s;
     animation-fill-mode: backwards;
 }
-.animateRight{
+
+.animateRight {
     animation: moveToRight 1s ease-out .2s;
     animation-fill-mode: backwards;
 }
-.animateSkyDropLeft{
+
+.animateSkyDropLeft {
     animation: skyDropLeft 1.2s ease-in .2s;
     animation-fill-mode: backwards;
 }
-.animateSkyDropRight{
+
+.animateSkyDropRight {
     animation: skyDropRight 1.2s ease-in .2s;
     animation-fill-mode: backwards;
 }
 
 
-
 /* A N I M A T I O N S */
-@keyframes moveToTop{
-    0%{
+@keyframes moveToTop {
+    0% {
         opacity: 0;
         transform: translateY(100px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-@keyframes moveToLeft{
-    0%{
+
+@keyframes moveToLeft {
+    0% {
         opacity: 0;
         transform: translateX(100px);
     }
-    80%{
+    80% {
         transform: translateX(-10px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-@keyframes moveToRight{
-    0%{
+
+@keyframes moveToRight {
+    0% {
         opacity: 0;
         transform: translateX(-100px);
     }
-    80%{
+    80% {
         transform: translateX(10px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-@keyframes skyDropRight{
-    0%{
+
+@keyframes skyDropRight {
+    0% {
         opacity: 0;
         transform: translate(-60px, -150px);
     }
-    70%{
+    70% {
         transform: translate(-40px, 30px);
     }
-    85%{
+    85% {
         transform: translate(-20px, -30px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }
 }
-@keyframes skyDropLeft{
-    0%{
+
+@keyframes skyDropLeft {
+    0% {
         opacity: 0;
         transform: translate(60px, -150px);
     }
-    70%{
+    70% {
         transform: translate(40px, 30px);
     }
-    85%{
+    85% {
         transform: translate(20px, -30px);
     }
-    100%{
+    100% {
         opacity: 1;
         transform: translate(0);
     }

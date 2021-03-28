@@ -1,0 +1,32 @@
+{
+  "name": "hot-gadget",
+  "version": "1.0.0",
+  "description": "Hot Gadget is a simple ecommerce website developed with HTML, CSS and Bootstrap. Feel free to modify.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "watchify ./src/main.js -o ./dist/bundle.js -d -v",
+    "dev": "browserify ./src/main.js > ./dist/bundle.js -d",
+    "build": "browserify ./src/main.js > ./dist/bundle.js --plugin tinyify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itsrafsanjani/hot-gadget.git"
+  },
+  "author": "itsrafsanjani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itsrafsanjani/hot-gadget/issues"
+  },
+  "homepage": "https://github.com/itsrafsanjani/hot-gadget#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  },
+  "devDependencies": {
+    "browserify": "^17.0.0",
+    "tinyify": "^3.0.0",
+    "watchify": "^4.0.0"
+  }
+}
