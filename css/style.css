@@ -100,14 +100,14 @@ ol.carousel-indicators li.odd.active {
 .cbtn:link, .cbtn:visited {
     text-decoration: none;
     width: 160px;
-    padding: 10px 0;
     border-radius: 9px;
-    margin-top: 20px;
     margin-bottom: 100px;
     transition: all .2s;
     background-color: #000;
     color: #fff;
     text-align: center;
+    padding: 12px 20px;
+    margin-top: 10px;
 }
 
 .cbtn:hover {
@@ -213,12 +213,6 @@ ol.carousel-indicators li.odd.active {
 .card-price {
     font-size: 1.6rem;
     padding-bottom: 30px;
-}
-
-.card-btn:link {
-    padding: 12px 20px;
-    margin-top: 10px;
-    border-radius: 9px;
 }
 
 /* C A T E G O R I E S */
